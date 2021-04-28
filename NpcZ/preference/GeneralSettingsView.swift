@@ -15,8 +15,8 @@ struct GeneralSettingsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {
-                Toggle("开机自启动", isOn: $autoLaunch)
-                Toggle("自动检查更新", isOn: $autoUpdateChecking)
+                Toggle("开机自启动", isOn: $autoLaunch).disabled(true)
+                Toggle("自动检查更新", isOn: $autoUpdateChecking).disabled(true)
 //                Picker(selection: .constant(1), label: Text("显示方式")) {
 //                    Text("状态栏").tag(1)
 //                    Text("程序坞").tag(2)
@@ -29,10 +29,10 @@ struct GeneralSettingsView: View {
             HStack {
                 Button("检查更新") {
                     
-                }
+                }.disabled(true)
                 Button("提交反馈") {
                     
-                }
+                }.disabled(true)
             }
         }
         .padding()

@@ -14,12 +14,12 @@ struct SettingsView: View {
         TabView {
             GeneralSettingsView()
                 .tabItem {
-                    Label("General", systemImage: "gear")
+                    Label("基本", systemImage: "gear")
                 }
                 .tag(Tabs.general)
             NpcSettingsView()
                 .tabItem {
-                    Label("Advanced", systemImage: "star")
+                    Label("进阶", systemImage: "server.rack")
                 }
                 .tag(Tabs.npc)
         }

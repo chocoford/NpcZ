@@ -1,11 +1,8 @@
 # NpcZ
 
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/chocoford/NpcZ/master)
-
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/chocoford/NpcZ)
-
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chocoford/NpcZ)
-
 ![GitHub](https://img.shields.io/github/license/chocoford/NpcZ)
 
 一个SwiftUI的[NPC](https://github.com/ehang-io/nps)的MacOS GUI应用。

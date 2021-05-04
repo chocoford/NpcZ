@@ -1,6 +1,6 @@
 # NpcZ
 
-![GitHub branch checks state](https://img.shields.io/github/checks-status/chocoford/NpcZ/master)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/chocoford/NpcZ/main)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/chocoford/NpcZ)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chocoford/NpcZ)
 ![GitHub](https://img.shields.io/github/license/chocoford/NpcZ)

@@ -14,11 +14,14 @@
 		39171F7C262EC52200581116 /* NPC_ZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39171F7B262EC52200581116 /* NPC_ZTests.swift */; };
 		39171F87262EC52200581116 /* NPC_ZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39171F86262EC52200581116 /* NPC_ZUITests.swift */; };
 		39171FB4263021A100581116 /* Utls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39171FB3263021A100581116 /* Utls.swift */; };
-		39171FBA263056E300581116 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 39171FB9263056E300581116 /* SocketIO */; };
 		39171FE226313E4600581116 /* NpcCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39171FE126313E4600581116 /* NpcCore.swift */; };
+		391AC964263DBC5C009716A9 /* NpcZLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 39FD53DB2635CCC7006D39A8 /* NpcZLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		391AC967263DBCC9009716A9 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391AC966263DBCC9009716A9 /* ServiceManagement.framework */; };
 		394B6B3226372E9D0030D558 /* NpcMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B6B3126372E9D0030D558 /* NpcMenuButton.swift */; };
 		394B6B3D26373E200030D558 /* NpcMenuDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394B6B3C26373E200030D558 /* NpcMenuDivider.swift */; };
 		394B6B572637F0C60030D558 /* npc in Resources */ = {isa = PBXBuildFile; fileRef = 394B6B562637F0C60030D558 /* npc */; };
+		39ECF0E3264186E8005C2874 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 39ECF0E2264186E8005C2874 /* SocketIO */; };
+		39ECF0EC2641B44B005C2874 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 39ECF0EB2641B44B005C2874 /* Sparkle */; };
 		39FD536426330996006D39A8 /* NpcSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD536326330996006D39A8 /* NpcSettingsView.swift */; };
 		39FD536C263315E9006D39A8 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD536B263315E9006D39A8 /* StartButton.swift */; };
 		39FD537626332039006D39A8 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FD537526332039006D39A8 /* ListCell.swift */; };
@@ -50,6 +53,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		391AC963263DBC25009716A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				391AC964263DBC5C009716A9 /* NpcZLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		39171F65262EC52000581116 /* NpcZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NpcZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39171F68262EC52000581116 /* NPC_ZApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPC_ZApp.swift; sourceTree = "<group>"; };
@@ -66,9 +82,11 @@
 		39171F88262EC52200581116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39171FB3263021A100581116 /* Utls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utls.swift; sourceTree = "<group>"; };
 		39171FE126313E4600581116 /* NpcCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpcCore.swift; sourceTree = "<group>"; };
+		391AC966263DBCC9009716A9 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		394B6B3126372E9D0030D558 /* NpcMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpcMenuButton.swift; sourceTree = "<group>"; };
 		394B6B3C26373E200030D558 /* NpcMenuDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpcMenuDivider.swift; sourceTree = "<group>"; };
 		394B6B562637F0C60030D558 /* npc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = npc; sourceTree = "<group>"; };
+		3983529726878B5C00140D9E /* appcast.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
 		39FD536326330996006D39A8 /* NpcSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NpcSettingsView.swift; sourceTree = "<group>"; };
 		39FD536B263315E9006D39A8 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 		39FD537526332039006D39A8 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
@@ -91,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39171FBA263056E300581116 /* SocketIO in Frameworks */,
+				39ECF0EC2641B44B005C2874 /* Sparkle in Frameworks */,
+				391AC967263DBCC9009716A9 /* ServiceManagement.framework in Frameworks */,
+				39ECF0E3264186E8005C2874 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,12 +142,14 @@
 		39171F5C262EC52000581116 = {
 			isa = PBXGroup;
 			children = (
+				3983529726878B5C00140D9E /* appcast.xml */,
 				39171FEF2632E4BC00581116 /* npc-core */,
 				39171F67262EC52000581116 /* NpcZ */,
 				39171F7A262EC52200581116 /* NpcZTests */,
 				39171F85262EC52200581116 /* NpcZUITests */,
 				39FD53DC2635CCC7006D39A8 /* NpcZLauncher */,
 				39171F66262EC52000581116 /* Products */,
+				391AC965263DBCC9009716A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +217,14 @@
 			path = "npc-core";
 			sourceTree = "<group>";
 		};
+		391AC965263DBCC9009716A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				391AC966263DBCC9009716A9 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		394B6B3B26373E0D0030D558 /* components */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +278,7 @@
 				39171F61262EC52000581116 /* Sources */,
 				39171F62262EC52000581116 /* Frameworks */,
 				39171F63262EC52000581116 /* Resources */,
+				391AC963263DBC25009716A9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -255,7 +286,8 @@
 			);
 			name = NpcZ;
 			packageProductDependencies = (
-				39171FB9263056E300581116 /* SocketIO */,
+				39ECF0E2264186E8005C2874 /* SocketIO */,
+				39ECF0EB2641B44B005C2874 /* Sparkle */,
 			);
 			productName = "NPC-Z";
 			productReference = 39171F65262EC52000581116 /* NpcZ.app */;
@@ -321,7 +353,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					39171F64262EC52000581116 = {
 						CreatedOnToolsVersion = 12.4;
@@ -349,7 +381,8 @@
 			);
 			mainGroup = 39171F5C262EC52000581116;
 			packageReferences = (
-				39171FB8263056E300581116 /* XCRemoteSwiftPackageReference "socket" */,
+				39ECF0E1264186E8005C2874 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				39ECF0EA2641B44B005C2874 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = 39171F66262EC52000581116 /* Products */;
 			projectDirPath = "";
@@ -589,7 +622,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"NpcZ/Preview Content\"";
 				DEVELOPMENT_TEAM = EQSKXJ7B7B;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NpcZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -616,7 +649,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"NpcZ/Preview Content\"";
 				DEVELOPMENT_TEAM = EQSKXJ7B7B;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NpcZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -721,6 +754,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NpcZLauncher/NpcZLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NpcZLauncher/Preview Content\"";
@@ -733,6 +767,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chocoford.NpcZLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -746,6 +781,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NpcZLauncher/NpcZLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"NpcZLauncher/Preview Content\"";
@@ -758,6 +794,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chocoford.NpcZLauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -816,21 +853,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		39171FB8263056E300581116 /* XCRemoteSwiftPackageReference "socket" */ = {
+		39ECF0E1264186E8005C2874 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			repositoryURL = "git@github.com:socketio/socket.io-client-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 16.0.1;
 			};
 		};
+		39ECF0EA2641B44B005C2874 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:sparkle-project/Sparkle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		39171FB9263056E300581116 /* SocketIO */ = {
+		39ECF0E2264186E8005C2874 /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 39171FB8263056E300581116 /* XCRemoteSwiftPackageReference "socket" */;
+			package = 39ECF0E1264186E8005C2874 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
 			productName = SocketIO;
+		};
+		39ECF0EB2641B44B005C2874 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39ECF0EA2641B44B005C2874 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

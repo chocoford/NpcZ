@@ -3,11 +3,20 @@
     "pins": [
       {
         "package": "SocketIO",
-        "repositoryURL": "https://github.com/socketio/socket.io-client-swift",
+        "repositoryURL": "git@github.com:socketio/socket.io-client-swift.git",
         "state": {
           "branch": null,
           "revision": "af5ce97b755d964235348d96f6db5cbdcbe334a5",
           "version": "16.0.1"
+        }
+      },
+      {
+        "package": "Sparkle",
+        "repositoryURL": "git@github.com:sparkle-project/Sparkle.git",
+        "state": {
+          "branch": null,
+          "revision": "c0933a516b420806e9216e71bd13ba76c54f0de6",
+          "version": "1.26.0"
         }
       },
       {

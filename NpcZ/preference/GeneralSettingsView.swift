@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import ServiceManagement
+import Sparkle
 
 struct GeneralSettingsView: View {
     
     @AppStorage("autoLaunch") private var autoLaunch = false
     @AppStorage("autoUpdateChecking") private var autoUpdateChecking = false
 
+    let updater = SUUpdater()
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {
-                Toggle("开机自启动", isOn: $autoLaunch).disabled(true)
+                Toggle("开机自启动", isOn: $autoLaunch)
                 Toggle("自动检查更新", isOn: $autoUpdateChecking).disabled(true)
 //                Picker(selection: .constant(1), label: Text("显示方式")) {
 //                    Text("状态栏").tag(1)
@@ -28,8 +31,8 @@ struct GeneralSettingsView: View {
             
             HStack {
                 Button("检查更新") {
-                    
-                }.disabled(true)
+                    updater.checkForUpdateInformation()
+                }
                 Button("提交反馈") {
                     
                 }.disabled(true)
@@ -55,6 +58,28 @@ struct GeneralSettingsView: View {
             : NSApp.setActivationPolicy(.accessory)
     }
     
+    
+    
+    func startupAppWhenLogin(startup: Bool) {
+        // 这里请填写你自己的Heler BundleID
+        let launcherAppId = "com.chocoford.NpcLauncher"
+        
+        // 开始注册/取消启动项
+        if SMLoginItemSetEnabled(launcherAppId as CFString, startup) == false {
+            print("SMLoginItemSetEnabled: the requested change has not taken effect.")
+        }
+
+//        var startedAtLogin = false
+//        for app in NSWorkspace.sharedWorkspace().runningApplications {
+//            if app.bundleIdentifier == launcherAppIdentifier {
+//                startedAtLogin = true
+//            }
+//        }
+//
+//        if startedAtLogin {
+//            NSDistributedNotificationCenter.defaultCenter().postNotificationName("killhelper",object: NSBundle.mainBundle().bundleIdentifier!)
+//        }
+    }
 }
 
 struct GeneralSettingsView_Previews: PreviewProvider {

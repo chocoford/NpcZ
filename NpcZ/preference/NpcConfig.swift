@@ -52,6 +52,7 @@ class NpcConfig: ObservableObject {
 
         let serverAdress: String = UserDefaults.standard.string(forKey: "serverAdress") ?? ""
         let vkey: String = UserDefaults.standard.string(forKey: "vkey") ?? ""
+        let p2pPassword: String = UserDefaults.standard.string(forKey: "p2pPassword") ?? ""
         let configText: String =
             """
             [common]
@@ -59,6 +60,10 @@ class NpcConfig: ObservableObject {
             conn_type=tcp
             vkey=\(vkey)
             disconnect_timeout=60
+            [p2p_ssh]
+            mode=p2p
+            password=ssh2
+            target_addr=10.1.50.2:22
             """
 
         do {

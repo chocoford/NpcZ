@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ServiceManagement
 
 var appVersion: String { return "\(Bundle.main.infoDictionary!["CFBundleShortVersionString"] ?? "" )" }
 
@@ -18,6 +19,7 @@ enum AppState: String {
 struct NPC_ZApp: App {
 //    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State var isRunning: Bool = false
+    @AppStorage("startOnBoot") var startOnBoot: Bool = false
 
     init() {
         let npcCore = NpcCore()
@@ -38,6 +40,17 @@ struct NPC_ZApp: App {
         
         // FIXME: 非常不优雅的方式
         npcCore.barButton = statusItem.button
+        
+        
+        /// 开机自启动相关
+//        let launcherAppId = "com.chocoford.NpcZLauncher"
+//        let runningApps = NSWorkspace.shared.runningApplications
+//        let isRunning = !runningApps.filter { $0.bundleIdentifier == launcherAppId }.isEmpty
+//
+//        if SMLoginItemSetEnabled(launcherAppId as CFString, true) == false {
+//            print("SMLoginItemSetEnabled: the requested change has not taken effect.")
+//        }
+//        print("设置自启动..")
     }
     
     var body: some Scene {
@@ -47,23 +60,5 @@ struct NPC_ZApp: App {
         }
         #endif
     }
-    
-//    func startupAppWhenLogin(startup: Bool) {
-//        // 这里请填写你自己的Heler BundleID
-//        let launcherAppIdentifier = "com.chocoford.NpcZ.NpcZHelper"
-//        
-//        // 开始注册/取消启动项
-//        SMLoginItemSetEnabled(launcherAppIdentifier,startup)
-//        
-//        var startedAtLogin = false
-//        for app in NSWorkspace.sharedWorkspace().runningApplications {
-//            if app.bundleIdentifier == launcherAppIdentifier {
-//                startedAtLogin = true
-//            }
-//        }
-//        
-//        if startedAtLogin {
-//            NSDistributedNotificationCenter.defaultCenter().postNotificationName("killhelper",object: NSBundle.mainBundle().bundleIdentifier!)
-//        }
-//    }
+
 }
